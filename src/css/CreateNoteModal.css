@@ -1,0 +1,150 @@
+.create-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.form-group-inline input.error-input:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.1);
+}
+
+.color-button:hover {
+    transform: scale(1.1);
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 28rem;
+}
+
+.form-group-inline input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+.color-button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group-inline input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.create-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    gap: 1rem;
+}
+
+.color-button.selected {
+    border-color: #2d3748;
+    box-shadow: 0 0 0 3px rgba(45, 55, 72, 0.1);
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 1rem;
+}
+
+.form-group-inline label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.form-group-inline input.error-input {
+    border-color: #ef4444;
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.create-button {
+    padding: 0.5rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+@media(max-width: 480px) {
+    .form-group-inline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group-inline label {
+        min-width: auto;
+        margin-bottom: 0.25rem;
+    }
+
+    .form-group-inline input {
+        width: 100%;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .error-message {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}

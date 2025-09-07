@@ -1,0 +1,29 @@
+.screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #DAE5F5;
+    text-align: center;
+    padding: 20px;
+}
+.image-container{
+    background-image: url(../images/image.PNG);
+    width: 600px;
+    height: 260px;
+    background-position: center;
+    background-size: contain;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0%;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+}
