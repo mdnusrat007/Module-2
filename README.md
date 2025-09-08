@@ -1,3 +1,7 @@
+# This is a pocket notes react project
+
+Pocket Notes is a responsive front-end web application that allows users to organize their notes into color-coded groups. Built with React and Context API, it stores the notes in the local storage and fetches everytime when rendered on the system.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
